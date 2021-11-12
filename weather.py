@@ -66,7 +66,7 @@ def to_dataset(desc, temp, feels, hum, vis, wind, cloud):
 	file.close()
 
 def get_weather_report():
-	api_key = "7edf84dd10acde11474dde25976d17a1"
+	api_key = API_KEY
 	base_url = "http://api.openweathermap.org/data/2.5/weather?"
 	
 	city_name = requests.get("https://ipinfo.io/").json()["city"]
@@ -87,7 +87,7 @@ def get_weather_report():
 		print("Couldn't get data")
 
 def get_weather():
-	api_key = "7edf84dd10acde11474dde25976d17a1"
+	api_key = API_KEY
 	base_url = "http://api.openweathermap.org/data/2.5/weather?"
 	
 	city_name = requests.get("https://ipinfo.io/").json()["city"]
